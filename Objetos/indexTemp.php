@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Quiz [Tudo é Educação]</title>
+
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="PainelLogin/css/style.css">
+    <script src="Chart/dist/Chart.bundle.js"></script>
+    <script src="Chart/js/Radar.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="Chart/js/BarMultiAxis.js"></script>
+    <script type="text/javascript" src = "PainelLogin/js/PanelLogin.js"></script>
+    <script type="text/javascript" src = "BarraLateral/js/BarraLateral.js"></script>
+    <script src="editor/ckeditor.js"></script>
+    <script src="editor/sample.js"></script>
+    <script type="text/javascript" src = "editor/Editor.js"></script>
+    <script type="text/javascript" src = "Object.js"></script>
+    <script type="text/javascript" src = "pageCreation.js"></script>
+    <link rel="stylesheet" href="BarraLateral/css/normalize1.css">
+    <link rel="stylesheet" href="BarraLateral/css/stylepainel.css">
+
+  </head>
+  <body>
+
+<script type="text/javascript">
+  var a = new pageCreation();
+
+  function reqListener(){
+    console.log(this.responseText);
+  }
+  var oReq = new XMLHttpRequest();
+  oReq.onload = function(){
+    var resp = [this.responseText];
+    //alert(resp);
+    a.showPage(resp);
+  }
+  oReq.open("get", "../DB/requestSite/verifyUser.php", true);
+  oReq.send();
+
+//  var a = new pageCreation();
+  //a.showPage(["BarraLateral", "editor","SAVEEDITORCONTENTBUTTON"]);
+  	//a.showPage([]);
+    //a.showPage([]);
+
+</script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="BarraLateral/js/indexpainel.js"></script>
+
+  </body>
+</html>

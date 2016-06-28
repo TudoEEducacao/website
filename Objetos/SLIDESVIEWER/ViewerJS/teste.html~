@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>ViewerJS Examples</title>
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="/stylesheets/app.css">
+	<link rel="stylesheet" href="/stylesheets/local.css">
+	<link rel="stylesheet" href="/stylesheets/special.css">
+  
+	<script src="/javascripts/foundation/modernizr.foundation.js"></script>
+	<script defer="defer" type="text/javascript" src="/javascripts/sie.js"></script>
+
+</head>
+<body>
+
+
+<div class="row">
+<iframe src = "/ViewerJS/#../Sistema.pdf" width='700' height='500' allowfullscreen webkitallowfullscreen></iframe>
+
+</div>
+</div>
+
+<hr />
+
+
+</div>
+</div>
+</body>
+</html>
+

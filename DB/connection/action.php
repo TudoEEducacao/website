@@ -4,8 +4,7 @@
 include "config.php";
 
 class DBactions {
-	protected $conn; private $conf = "";
-	private $data;
+	protected $conn; private $conf = ""; private $data;
 	
 	function __construct() {
 		$this->openConnection();
@@ -19,17 +18,17 @@ class DBactions {
 
 		try {
 			$stmt = $this->conn->query($sql);
-			$data = $stmt->fetch();
+			$this->data = $stmt->fetch();
 			
 			if($verboseMode === TRUE)
-				echo "<script>alert('Returned Value: " . $data[0] . "');</script>";
+				echo "<script>alert('Returned Value: " . $this->data[0] . "');</script>";
 		}
 		catch(PDOException $e) {
 			if($verboseMode === TRUE)
 				echo "Error: " . $e->getMessage();
 		}
 
-		return $data;
+		return $this->data;
 	}
 	
 	public function openConnection($verboseMode = FALSE){
