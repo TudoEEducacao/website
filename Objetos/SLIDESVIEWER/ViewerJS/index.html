@@ -13,19 +13,16 @@
 	<meta name="viewport" content="width=device-width" />
 
 	<title>ViewerJS Examples</title>
-
-	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="/stylesheets/app.css">
-	<link rel="stylesheet" href="/stylesheets/local.css">
-	<link rel="stylesheet" href="/stylesheets/special.css">
-  
-	<script src="/javascripts/foundation/modernizr.foundation.js"></script>
-	<script defer="defer" type="text/javascript" src="/javascripts/sie.js"></script>
+	<script src="js/pdfPage.js"></script>
 
 </head>
 <body>
 
-<iframe src = "Sistema.pdf" width='100%' height='100%' allowfullscreen webkitallowfullscreen></iframe>
+
+<script type="text/javascript">
+	var a = new PDFViewer();
+	a.show()
+</script>
 
 </body>
 </html>

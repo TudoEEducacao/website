@@ -5,7 +5,10 @@
 	var oReq = new XMLHttpRequest();
 	oReq.onload = function(){
 		document.write(this.responseText);
+		alert((this.responseText == 1));
 	}
-	oReq.open("get", "getdata.php", true);
+	oReq.open("get", "./DB/requestSite/verifyUser.php", true);
 	oReq.send();
 </script>
+
+

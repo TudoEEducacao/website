@@ -38,7 +38,7 @@
     //alert(resp);
     a.showPage(resp);
   }
-  oReq.open("get", "../DB/requestSite/verifyUser.php", true);
+  oReq.open("get", "../requestSite/verifyUser.php", true);
   oReq.send();
 
 //  var a = new pageCreation();
