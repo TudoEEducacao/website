@@ -1,0 +1,6 @@
+[0627/155550:ERROR:process_reader_win.cc(141)] SuspendThread: Acesso negado. (0x5)
+[0627/155550:ERROR:exception_snapshot_win.cc(57)] thread ID 13248 not found in process
+[0627/155550:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::InitializeException failed
+[0627/155550:ERROR:process_reader_win.cc(141)] SuspendThread: Acesso negado. (0x5)
+[0627/155550:ERROR:exception_snapshot_win.cc(57)] thread ID 13180 not found in process
+[0627/155550:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::InitializeException failed

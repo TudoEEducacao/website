@@ -5,9 +5,9 @@ class ChartRadar{
         return "CHARTRADAR";
     }
 
-     randomScalingFactor() {
+    randomScalingFactor() {
             return Math.round(Math.random() * 100);
-        }
+    }
 
     addDataBase(){
         var randomColorFactor = function() {
@@ -37,7 +37,6 @@ class ChartRadar{
         var addData = function(){
              if (config.data.datasets.length > 0) {
                 config.data.labels.push('dataset #' + config.data.labels.length);
-
                 $.each(config.data.datasets, function (i, dataset) {
                     dataset.data.push(randomScalingFactor());
                 });
@@ -47,11 +46,10 @@ class ChartRadar{
             config.data.datasets.splice(0, 1);
         }
         var removeData = function(){
-             config.data.labels.pop(); // remove the label first
-
+            config.data.labels.pop(); // remove the label first
             $.each(config.data.datasets, function(i, dataset) {
                 dataset.data.pop();
-        });
+            });
         }
     }
 
@@ -106,9 +104,5 @@ class ChartRadar{
         //document.body.appendChild(myRadar);
         //div.style = "width:75%";
         canvas.id = "canvas";
-
-
-
-
     }
 }
